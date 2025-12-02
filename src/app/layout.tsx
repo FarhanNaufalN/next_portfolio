@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     padding="0"
                     style={{ minHeight: "100vh" }}
                   >
-                    <Navbar />
+                    <Header />
                     {children}
                   </Column>
                 </IconProvider>
