@@ -1,64 +1,256 @@
 import Image from "next/image";
+import { Badge, Row, Card, Media, TypeFx, Carousel,ShineFx, Avatar, AutoScroll, Fade,HeadingNav,Mask  } from "@once-ui-system/core";
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 dark:text-white "
+    >
+
+      <main className="w-screen relative py-5">
+
+       
+        
+        {/* Hero Section */}
+        <section className="text-start ">
+          <div className="flex justify-center  ml-20 gap-6">
+            <div className="sticky top-20 h-fit">
+              <Image
+                src="/Me.png"
+                alt="Farhan Naufal N"
+                width={180}
+                height={180}
+                className="rounded-full shadow-xl shadow-blue-300/50 dark:shadow-blue-800/40 object-cover"
+              />
+              <div className="pl-5 pt-5">
+              <Badge id="badge-2" title="Indonesia / Bandung"  arrow={false} paddingLeft="12" paddingRight="16" paddingY="8" onBackground="brand-medium" background="brand-medium" />
+              </div>
+            </div>
+
+
+
+            <div className="sm:pl-10 mt-12 pb-5">
+              <ShineFx speed={3}>
+              <h1 className="text-4xl font-bold mb-2 text-slate-800 dark:text-white">
+                Farhan Naufal N
+              </h1>
+              </ShineFx>
+            <div className="pt-3">
+              <TypeFx
+                words={["Software Engineer", "Internet of Things", "AI Enthusiast", "Mobile Developer"]}
+                speed={80}
+                hold={2000}
+                trigger="instant"
+              />
+              </div>
+
+
+              <p className="text-slate-600 dark:text-white max-w-lg pt-12 ">
+                Software Engineer, IoT, AI, and Mobile Development Enthusiast.
+                Passionate about building scalable systems, drone-based CV models,
+                and real-world IoT solutions.
+              </p>
+
+              <div className="flex items-center gap-4 mt-12">
+                <div className="flex items-center gap-2">
+                    <AiFillLinkedin className="w-5 h-5 text-blue-600 dark:text-white" aria-hidden />
+                  <Badge href="https://www.linkedin.com/in/farhannaufalnurdiansyah/" id="badge-1" title="LinkedIn" textVariant="label-default-s" color="blue" />
+                </div>
+
+                <div className="flex items-center gap-2">
+                    <AiFillGithub className="w-5 h-5 text-slate-800 dark:text-white" aria-hidden />
+                  <Badge href="https://github.com/FarhanNaufalN/" id="badge-2" title="GitHub"  textVariant="label-default-s" />
+                </div>
+
+                <div className="flex items-center gap-2">
+                    <AiFillInstagram className="w-5 h-5 text-pink-500 dark:text-white" aria-hidden />
+                  <Badge href="https://www.instagram.com/hans_nafl/" id="badge-3" title="Instagram" textVariant="label-default-s" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Work Experience */}
+        <section className=" mt-10 space-y-8 flex flex-col items-center">
+           <Mask
+            fillWidth
+            x={50}
+            y={50}
+            radius={20}
+            borderBottom="neutral-medium"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+           <ShineFx speed={3}>
+          <h2 className="text-3xl font-semibold pb-5 dark:text-white pb-5">
+            Work Experience
+          </h2>
+            </ShineFx>
+          <Mask
+            fillWidth
+            x={50}
+            y={50}
+            radius={20}
+            borderBottom="neutral-medium"
+            />
+          <div className="space-y-6 w-full max-w-2xl">
+            {/* PT. INSTALASI KECERDASAN BUATAN */}
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold dark:text-white">PT. INSTALASI KECERDASAN BUATAN</h3>
+              <div className="text-cyan-600 dark:text-cyan-300">
+                <span className="font-semibold text-cyan-700 dark:text-cyan-400">Fullstack Developer - Internship</span>
+                <span className="ml-4 text-gray-600 dark:text-gray-400">(Sep 2024 – April 2025)</span>
+              </div>
+              <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+                <li>Assisted the founder in explaining AI product concepts and implementations to stakeholders and potential partners.</li>
+                <li>Designed and built databases for data models to support efficient data management and storage.</li>
+                <li>Optimized data structures to meet the requirements of AI product development.</li>
+              </ul>
+            </div>
+
+            <div className="flex justify-center pt-4">
+              <div className="w-80 sm:w-96">
+                <Carousel
+                  sizes="100%"
+                  className="rounded-lg overflow-hidden"
+                  items={[
+                    { slide: "/ikb1.jpg", alt: "Image 1" },
+                    { slide: "/ikb2.jpg", alt: "Image 2" },
+                    { slide: "/ikb3.jpg", alt: "Image 3" },
+                  ]}
+                />
+              </div>
+            </div>
+
+            {/* PT. AMATI INDONESIA */}
+            <div className="space-y-3 pt-10">
+              <h3 className="text-xl font-semibold dark:text-white">PT. AMATI INDONESIA</h3>
+              <div className="text-cyan-600 dark:text-cyan-300">
+                <span className="font-semibold text-cyan-700 dark:text-cyan-400">Mobile Developer - Internship</span>
+                <span className="ml-4 text-gray-600 dark:text-gray-400">(Feb 2024 – Jul 2024)</span>
+              </div>
+              <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+                <li>Led Project Team : Directed a cross-functional team of 6 members in designing and implementing traceability technology, enhancing transparency and security across food supply chains.</li>
+                <li>Monitored Project Progress: Oversaw project milestones with weekly updates, resolving over 15 critical issues and ensuring the project stayed budget and on track.</li>
+                <li>Developed Mobile Application: Built the mobile application using Kotlin, integrating it with database using RESTful APIs to support real-time traceability and data synchronization.</li>
+              </ul>
+            </div>
+
+            <div className="flex justify-center pt-4">
+              <div className="w-80 sm:w-96">
+                <Carousel
+                  sizes="100%"
+                  className="rounded-lg overflow-hidden"
+                  items={[
+                    { slide: "/amati1.png", alt: "Image 1" },
+                    { slide: "/amati2.png", alt: "Image 2" },
+                    { slide: "/amati3.png", alt: "Image 3" },
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+       {/* Skills Section */}
+        <section className="mt-12 pt-14 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+          <div className="flex justify-center mb-8">
+            <Mask
+            fillWidth
+            x={50}
+            y={50}
+            radius={20}
+            borderBottom="neutral-medium"
+            />
+          <ShineFx speed={3}>
+          <h2 className="text-3xl font-semibold pb-5 dark:text-white text-center justify-center">
+            Tech Stack
+          </h2>
+          </ShineFx>
+          <Mask
+            fillWidth
+            x={50}
+            y={50}
+            radius={20}
+            borderBottom="neutral-medium"
+            />
+          </div>
+
+          {/* Row 1 */}
+          <div className="flex justify-center">
+            <Row gap="16">
+              <Avatar src="/logos/client-1.png" size="l" />
+              <Avatar src="/logos/client-2.png" size="l" />
+              <Avatar src="/logos/client-3.png" size="l" />
+              <Avatar src="/logos/client-4.png" size="l" />
+              <Avatar src="/logos/client-5.png" size="l" />
+              <Avatar src="/logos/client-6.png" size="l" />
+            </Row>
+          </div>
+
+          {/* Row 2 */}
+          <div className="flex justify-center mt-6">
+            <Row gap="16">
+              <Avatar src="/logos/client-7.png" size="l" />
+              <Avatar src="/logos/client-8.png" size="l" />
+              <Avatar src="/logos/client-9.png" size="l" />
+              <Avatar src="/logos/client-10.png" size="l" />
+              <Avatar src="/logos/client-11.png" size="l" />
+              <Avatar src="/logos/client-12.png" size="l" />
+            </Row>
+          </div>
+
+          {/* Row 3 */}
+          <div className="flex justify-center mt-6">
+            <Row gap="16">
+              <Avatar src="/logos/client-13.png" size="l" />
+              <Avatar src="/logos/client-14.jpg" size="l" />
+              <Avatar src="/logos/client-15.png" size="l" />
+              <Avatar src="/logos/client-16.png" size="l" />
+              <Avatar src="/logos/client-17.jpg" size="l" />
+            </Row>
+          </div>
+        </section>
+
+
+       
+
+        {/* Footer */}
+        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+          <div className="flex justify-center mb-8">
+          <Row gap="8" align="center">
+            © {new Date().getFullYear()} Farhan Naufal N 
+
+            <div className="ml-s grid-row-3 width-fit flex items-center gap-2">
+              <AiFillInstagram size={24} />
+              <a
+                href="https://www.instagram.com/hans_nafl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-600 hover:underline"
+              >
+              </a>
+              <AiFillLinkedin size={24} />
+              <a
+                href="https://www.linkedin.com/in/farhannaufalnurdiansyah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-600 hover:underline"
+              >
+              </a>
+              <AiFillGithub size={24} />
+              <a
+                href="https://github.com/FarhanNaufalN/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-600 hover:underline"
+              >
+              </a>
+            </div>
+            </Row>
+            </div>
+        </footer>
+
       </main>
     </div>
   );

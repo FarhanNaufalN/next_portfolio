@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📘 Next.js Basic – Learning Project Portfolio
 
-## Getting Started
+Project ini dibuat sebagai bagian dari proses pembelajaran Next.js dasar pada Week 01. Fokus utama project ini adalah memahami struktur dan konsep fundamental dalam Next.js, termasuk routing, komponen, layout, dan rendering.
 
-First, run the development server:
+🚀 Tech Stack
 
-```bash
+Next.js
+
+React
+
+JavaScript (ES6+)
+
+Node.js
+
+
+🎯 Learning Objectives
+
+Dalam project ini, saya mempelajari dan berlatih:
+
+✨ Fitur Next.js
+
+Dasar-dasar folder app router
+
+Routing & nested routes
+
+Layout global & per-section
+
+Server vs Client Components
+
+Rendering (SSR, SSG, CSR sederhana)
+
+Handling assets seperti gambar & font
+
+👨‍💻 Skill Development
+
+Cara membuat struktur project yang bersih
+
+Memahami alur request → render pada Next.js
+
+Membuat komponen reusable
+
+Menggunakan environment Next.js secara efisien
+
+🛠️ How to Install & Run
+1️⃣ Clone repository
+git clone https://github.com/username/next-basic.git
+
+2️⃣ Masuk ke folder project
+cd next-basic
+
+3️⃣ Install dependencies
+npm install
+
+
+atau
+
+yarn install
+
+4️⃣ Jalankan development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Lalu buka di browser:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+📌 Notes
 
-To learn more about Next.js, take a look at the following resources:
+Project ini adalah versi dasar untuk membangun fondasi sebelum masuk ke pembelajaran Next.js yang lebih advanced seperti:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API Routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dynamic Routing
 
-## Deploy on Vercel
+Data Fetching (Server Actions, fetch, dll)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 License
+
+Project ini dibuat untuk keperluan belajar dan bebas digunakan asalkan sertakan creditnya.
