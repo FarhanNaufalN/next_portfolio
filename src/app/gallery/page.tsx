@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import { Row, Card, Media, AutoScroll,ShineFx, Avatar, Icon, Text,Line,Mask, MasonryGrid,Flex,Column } from "@once-ui-system/core";
 

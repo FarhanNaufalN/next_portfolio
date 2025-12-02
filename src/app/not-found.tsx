@@ -1,6 +1,5 @@
-"use client";
-
-export default function NotFoundPage() {
+'use client'; 
+export default function NotFound() {
   return (
     <div className="flex items-center justify-center min-h-screen text-center p-10">
       <h1 className="text-4xl font-bold">404 - Page Not Found</h1>

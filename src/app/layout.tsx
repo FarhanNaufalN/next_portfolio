@@ -5,9 +5,9 @@ import '@once-ui-system/core/css/tokens.css';
 import './globals.css';
 
 import classNames from "classnames";
-import { Column, DataThemeProvider, IconProvider, LayoutProvider, ThemeProvider, ToastProvider } from "@once-ui-system/core";
 import { fonts } from "../resources/once-ui.config";
-import Header from '@/component/header';
+import OnceUIClientLayout from '@/component/onceUiClientLayout';
+
 
 export const metadata = {
   title: 'App',
@@ -63,27 +63,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body>
-        <LayoutProvider>
-          <ThemeProvider>
-            <DataThemeProvider>
-              <ToastProvider>
-                <IconProvider>
-                  <Column
-                    className="page-bg"
-                    background="page"
-                    fillWidth
-                    margin="0"
-                    padding="0"
-                    style={{ minHeight: "100vh" }}
-                  >
-                    <Header />
-                    {children}
-                  </Column>
-                </IconProvider>
-              </ToastProvider>
-            </DataThemeProvider>
-          </ThemeProvider>
-        </LayoutProvider>
+       <OnceUIClientLayout>
+                    {children} 
+        </OnceUIClientLayout>
       </body>
     </html>
   );

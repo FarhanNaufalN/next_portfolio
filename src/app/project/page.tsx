@@ -1,3 +1,5 @@
+'use client';
+
 import { Hover, Column, Text, Tag, Card, Media, Row } from "@once-ui-system/core";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
