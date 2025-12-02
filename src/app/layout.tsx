@@ -5,7 +5,7 @@ import './globals.css';
 import classNames from "classnames";
 import { Column, DataThemeProvider, IconProvider, LayoutProvider, ThemeProvider, ToastProvider } from "@once-ui-system/core";
 import { fonts } from "../resources/once-ui.config";
-import Navbar from '@/component/header';
+import Header from '@/component/header';
 
 export const metadata = {
   title: 'App',
