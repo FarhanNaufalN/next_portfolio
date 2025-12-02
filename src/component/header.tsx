@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { Row, Flex, Logo, Column,GlitchFx } from "@once-ui-system/core";
+import { Row,} from "@once-ui-system/core";
 import { SegmentedControl, ButtonOption } from "./segmentControl";
 import { ThemeToggle } from "./themeToogle"; 
 

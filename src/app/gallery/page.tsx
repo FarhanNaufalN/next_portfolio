@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Badge, Row, Card, Media, TypeFx, AutoScroll,ShineFx, Avatar, Icon, Text,Line,Mask, MasonryGrid,Flex,Column } from "@once-ui-system/core";
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { Row, Card, Media, AutoScroll,ShineFx, Avatar, Icon, Text,Line,Mask, MasonryGrid,Flex,Column } from "@once-ui-system/core";
+
 
 export default function GalleryPage() {
   const images = [

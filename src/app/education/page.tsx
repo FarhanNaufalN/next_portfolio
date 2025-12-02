@@ -1,18 +1,10 @@
-import Image from "next/image";
 import {
-  Badge,
   Row,
   Card,
   Media,
-  TypeFx,
   Carousel,
   ShineFx,
-  Avatar,
-  AutoScroll,
-  Fade,
-  HeadingNav,
   Column,
-  Text,
   CompareImage,
   Mask
 } from "@once-ui-system/core";
@@ -21,7 +13,7 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
-import Header from "@/component/header";
+
 
 export default function EducationPage() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Badge, Row, Card, Media, TypeFx, Carousel,ShineFx, Avatar, AutoScroll, Fade,HeadingNav,Mask  } from "@once-ui-system/core";
+import { Badge, Row, TypeFx, Carousel,ShineFx, Avatar, Mask  } from "@once-ui-system/core";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
 
