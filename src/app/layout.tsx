@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
        <OnceUIClientLayout>
                     {children} 
-        </OnceUIClientLayout>
+       </OnceUIClientLayout>
       </body>
     </html>
   );

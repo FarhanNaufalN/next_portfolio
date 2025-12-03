@@ -7,7 +7,7 @@ export default function EducationClient() {
     return (
         <div className="flex min-h-screen flex-col items-center py-10 px-4 bg-me text-slate-900 dark:text-white justify-center">
              {/* ------------------ EDUCATION ------------------ */}
-        <section id="education" className="space-y-6">
+        <section id="education" className="space-y-6 ">
             
             <Mask
             fillWidth
@@ -30,7 +30,8 @@ export default function EducationClient() {
             />
             
 
-         <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w">
+         <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w mx-auto w-300">
+   
              <Column fillWidth paddingX="20" paddingY="24" gap="8">
             <h3 className="font-semibold text-xl">
                 Universitas Pendidikan Indonesia (2021–2025)
@@ -57,15 +58,17 @@ export default function EducationClient() {
 
             </Column>
 
+
             <Carousel
                 items={[
                     { slide: <Row height={20} fill center radius="s" background="brand-strong"><Media src="/education/upi3.png" ></Media></Row> },
                     { slide: <Row height={20} fill center radius="s" background="accent-strong"><Media src="/education/upi2.png"></Media></Row> },
                 ]}
                 />
+                
             </Card>
 
-          <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w">
+          <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w mx-auto w-300">
             <div className="justify-center mt-s" >
             <CompareImage
                 radius="xl"
@@ -122,7 +125,7 @@ export default function EducationClient() {
             />
             
 
-          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20">
+          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 w-300">
         
           <Row fillWidth gap="8" >
           <Column fillWidth paddingX="24" paddingY="24" gap="8">
@@ -173,7 +176,7 @@ export default function EducationClient() {
         
           </Card>
             
-          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20">
+          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 mx-auto w-300">
           <Column fillWidth paddingX="24" paddingY="24" gap="8">
             
               <Row maxWidth={32} height={8} gap="8">
