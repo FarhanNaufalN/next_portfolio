@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { Badge, Row, TypeFx, Carousel,ShineFx, Avatar, Mask, Text } from "@once-ui-system/core";
+import { Badge, Row, TypeFx, Carousel,ShineFx, Avatar, Mask  } from "@once-ui-system/core";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
 
@@ -34,9 +34,9 @@ export default function Home() {
 
             <div className="sm:pl-10 mt-12 pb-5">
               <ShineFx speed={3}>
-             <Text>
+              <h1 className="text-4xl font-bold mb-2 text-slate-800 dark:text-white">
                 Farhan Naufal N
-              </Text>
+              </h1>
               </ShineFx>
             <div className="pt-3">
               <TypeFx
@@ -48,11 +48,11 @@ export default function Home() {
               </div>
 
 
-              <Text className="max-w-lg pt-12 ">
+              <p className="text-slate-600 dark:text-white max-w-lg pt-12 ">
                 Software Engineer, IoT, AI, and Mobile Development Enthusiast.
                 Passionate about building scalable systems, drone-based CV models,
                 and real-world IoT solutions.
-              </Text>
+              </p>
 
               <div className="flex items-center gap-4 mt-12">
                 <div className="flex items-center gap-2">
@@ -84,9 +84,9 @@ export default function Home() {
             borderBottom="neutral-medium"
             />
            <ShineFx speed={3}>
-          <Text className="text-3xl font-semibold pb-5 pb-5">
+          <h2 className="text-3xl font-semibold pb-5 dark:text-white pb-5">
             Work Experience
-          </Text>
+          </h2>
             </ShineFx>
           <Mask
             fillWidth
@@ -98,12 +98,12 @@ export default function Home() {
           <div className="space-y-6 w-full max-w-2xl">
             {/* PT. INSTALASI KECERDASAN BUATAN */}
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold ">PT. INSTALASI KECERDASAN BUATAN</h3>
-              <div className="text-cyan-600 ">
-                <span className="font-semibold text-cyan-700 ">Fullstack Developer - Internship</span>
+              <h3 className="text-xl font-semibold dark:text-white">PT. INSTALASI KECERDASAN BUATAN</h3>
+              <div className="text-cyan-600 dark:text-cyan-300">
+                <span className="font-semibold text-cyan-700 dark:text-cyan-400">Fullstack Developer - Internship</span>
                 <span className="ml-4 text-gray-600 dark:text-gray-400">(Sep 2024 – April 2025)</span>
               </div>
-              <ul className="list-disc list-inside space-y-2 text-slate-700 ">
+              <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
                 <li>Assisted the founder in explaining AI product concepts and implementations to stakeholders and potential partners.</li>
                 <li>Designed and built databases for data models to support efficient data management and storage.</li>
                 <li>Optimized data structures to meet the requirements of AI product development.</li>
@@ -126,12 +126,12 @@ export default function Home() {
 
             {/* PT. AMATI INDONESIA */}
             <div className="space-y-3 pt-10">
-              <h3 className="text-xl font-semibold ">PT. AMATI INDONESIA</h3>
+              <h3 className="text-xl font-semibold dark:text-white">PT. AMATI INDONESIA</h3>
               <div className="text-cyan-600 dark:text-cyan-300">
-                <span className="font-semibold text-cyan-700 ">Mobile Developer - Internship</span>
-                <span className="ml-4 text-gray-600 ">(Feb 2024 – Jul 2024)</span>
+                <span className="font-semibold text-cyan-700 dark:text-cyan-400">Mobile Developer - Internship</span>
+                <span className="ml-4 text-gray-600 dark:text-gray-400">(Feb 2024 – Jul 2024)</span>
               </div>
-              <ul className="list-disc list-inside space-y-2 text-slate-700 ">
+              <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
                 <li>Led Project Team : Directed a cross-functional team of 6 members in designing and implementing traceability technology, enhancing transparency and security across food supply chains.</li>
                 <li>Monitored Project Progress: Oversaw project milestones with weekly updates, resolving over 15 critical issues and ensuring the project stayed budget and on track.</li>
                 <li>Developed Mobile Application: Built the mobile application using Kotlin, integrating it with database using RESTful APIs to support real-time traceability and data synchronization.</li>
@@ -165,7 +165,7 @@ export default function Home() {
             borderBottom="neutral-medium"
             />
           <ShineFx speed={3}>
-          <h2 className="text-3xl font-semibold pb-5  text-center justify-center">
+          <h2 className="text-3xl font-semibold pb-5 dark:text-white text-center justify-center">
             Tech Stack
           </h2>
           </ShineFx>
@@ -218,7 +218,7 @@ export default function Home() {
        
 
         {/* Footer */}
-        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 ">
+        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
           <div className="flex justify-center mb-8">
           <Row gap="8" align="center">
             © {new Date().getFullYear()} Farhan Naufal N 
