@@ -69,7 +69,7 @@ export default function GalleryPage() {
   const heights = [16, 6, 4, 6, 16, 12, 7, 24, 4, 12, 6, 2, 24, 17, 12, 5, 9, 6, 20, 11];
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 dark:text-white">
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 ">
       <main className="w-screen relative py-5">
 
              {/* ------------------ Certification ------------------ */}
@@ -186,7 +186,7 @@ export default function GalleryPage() {
         </Column>
         </div>
 
-        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 ">
                   <div className="flex justify-center mb-8">
                   
                     <Row gap="8" align="center" className="flex-wrap justify-center"> 

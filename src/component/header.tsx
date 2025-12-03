@@ -47,7 +47,7 @@ export default function Header() {
         >
          
           <div className="sm:col-start-1 sm:col-end-2 ml-2 flex justify-start">
-            <h1 className="text-sm sm:text-l font-sans font-medium text-slate-700 dark:text-white">
+            <h1 className="text-sm sm:text-l font-sans font-medium text-slate-700 ">
               @hans_nafl
             </h1>
           </div>
@@ -77,7 +77,7 @@ export default function Header() {
             "
           >
             <div
-              className="text-l sm:text-base text-slate-700 dark:text-white"
+              className="text-l sm:text-base text-slate-700 "
               aria-live="polite"
             >
               {now.toLocaleTimeString()}

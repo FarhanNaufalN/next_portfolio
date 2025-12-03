@@ -72,7 +72,7 @@ export default function ProjectPage() {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-10 px-4 bg-me text-slate-900 dark:text-white ">
+    <div className="flex min-h-screen flex-col items-center justify-center py-10 px-4 bg-me text-slate-900  ">
       <main className="w-full max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
           {projects.map((p, index) => (
@@ -113,7 +113,7 @@ export default function ProjectPage() {
           ))}
         </div>
 
-        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 ">
           <div className="flex justify-center mb-8">
           
             <Row gap="8" align="center" className="flex-wrap justify-center"> 

@@ -8,7 +8,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 export default function Home() {
   return (
    
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 dark:text-white ">
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900  ">
 
       {/* Main Content Area */}
       <main className="w-full max-w-4xl relative py-5 px-4 sm:px-6 lg:px-8"> 
@@ -36,7 +36,7 @@ export default function Home() {
          
             <div className="sm:pl-10 mt-6 sm:mt-12 pb-5 text-center sm:text-left">
               <ShineFx speed={3}>
-                <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-slate-800 dark:text-white">
+                <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-slate-800 ">
                   Farhan Naufal N
                 </h1>
               </ShineFx>
@@ -49,7 +49,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-slate-600 dark:text-white max-w-lg pt-8 sm:pt-12 mx-auto sm:mx-0">
+              <p className="text-slate-600  max-w-lg pt-8 sm:pt-12 mx-auto sm:mx-0">
                 Software Engineer, IoT, AI, and Mobile Development Enthusiast.
                 Passionate about building scalable systems, drone-based CV models,
                 and real-world IoT solutions.
@@ -58,15 +58,15 @@ export default function Home() {
              
               <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 mt-8 sm:mt-12">
                 <div className="flex items-center gap-2">
-                  <AiFillLinkedin className="w-5 h-5 text-blue-600 dark:text-white" aria-hidden />
+                  <AiFillLinkedin className="w-5 h-5 text-blue-600 " aria-hidden />
                   <Badge href="https://www.linkedin.com/in/farhannaufalnurdiansyah/" id="badge-1" title="LinkedIn" textVariant="label-default-s" color="blue" />
                 </div>
                 <div className="flex items-center gap-2">
-                  <AiFillGithub className="w-5 h-5 text-slate-800 dark:text-white" aria-hidden />
+                  <AiFillGithub className="w-5 h-5 text-slate-800 " aria-hidden />
                   <Badge href="https://github.com/FarhanNaufalN/" id="badge-2" title="GitHub" textVariant="label-default-s" />
                 </div>
                 <div className="flex items-center gap-2">
-                  <AiFillInstagram className="w-5 h-5 text-pink-500 dark:text-white" aria-hidden />
+                  <AiFillInstagram className="w-5 h-5 text-pink-500 " aria-hidden />
                   <Badge href="https://www.instagram.com/hans_nafl/" id="badge-3" title="Instagram" textVariant="label-default-s" />
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Home() {
         <section className="mt-10 space-y-8 flex flex-col items-center">
 
           <ShineFx speed={3}>
-            <h2 className="text-3xl font-semibold pb-5 dark:text-white">
+            <h2 className="text-3xl font-semibold pb-5 ">
               Work Experience
             </h2>
           </ShineFx>
@@ -90,7 +90,7 @@ export default function Home() {
             
            
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold dark:text-white">PT. INSTALASI KECERDASAN BUATAN</h3>
+              <h3 className="text-xl font-semibold ">PT. INSTALASI KECERDASAN BUATAN</h3>
               <div className="text-cyan-600 dark:text-cyan-300 flex flex-col sm:flex-row sm:items-center">
                 <span className="font-semibold text-cyan-700 dark:text-cyan-400">Fullstack Developer - Internship</span>
                 <span className="ml-0 sm:ml-4 text-gray-600 dark:text-gray-400">(Sep 2024 – April 2025)</span>
@@ -115,7 +115,7 @@ export default function Home() {
 
            
             <div className="space-y-3 pt-10">
-              <h3 className="text-xl font-semibold dark:text-white">PT. AMATI INDONESIA</h3>
+              <h3 className="text-xl font-semibold ">PT. AMATI INDONESIA</h3>
               <div className="text-cyan-600 dark:text-cyan-300 flex flex-col sm:flex-row sm:items-center">
                 <span className="font-semibold text-cyan-700 dark:text-cyan-400">Mobile Developer - Internship</span>
                 <span className="ml-0 sm:ml-4 text-gray-600 dark:text-gray-400">(Feb 2024 – Jul 2024)</span>
@@ -147,7 +147,7 @@ export default function Home() {
           
           <div className="flex justify-center mb-8">
             <ShineFx speed={3}>
-              <h2 className="text-3xl font-semibold pb-5 dark:text-white text-center justify-center">
+              <h2 className="text-3xl font-semibold pb-5  text-center justify-center">
                 Tech Stack
               </h2>
             </ShineFx>
@@ -180,7 +180,7 @@ export default function Home() {
         </section>
         
        
-        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 ">
           <div className="flex justify-center mb-8">
           
             <Row gap="8" align="center" className="flex-wrap justify-center"> 
