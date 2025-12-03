@@ -23,7 +23,7 @@ export default function Home() {
                 alt="Farhan Naufal N"
                 width={180}
                 height={180}
-                className="rounded-full shadow-xl shadow-blue-300/50 dark:shadow-blue-800/40 object-cover"
+                className="rounded-full shadow-xl object-cover"
               />
               <div className="pl-5 pt-5">
               <Badge id="badge-2" title="Indonesia / Bandung"  arrow={false} paddingLeft="12" paddingRight="16" paddingY="8" onBackground="brand-medium" background="brand-medium" />
