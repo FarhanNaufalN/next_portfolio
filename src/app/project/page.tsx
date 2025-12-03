@@ -122,7 +122,7 @@ export default function ProjectPage() {
 
         </div>
          {/* Footer */}
-                <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+                <footer className="pt-10 mt-16 text-center text-sm text-slate-600 ">
                   <div className="flex justify-center mb-8">
                   <Row gap="8" align="center">
                     © {new Date().getFullYear()} Farhan Naufal N 

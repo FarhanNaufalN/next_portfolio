@@ -44,7 +44,7 @@ export default function Header() {
             <div className="w-full grid grid-cols-4 items-center">
               <div />
                <div className="col-start-1 col-end-2 ml-xl">
-                <div className=" text-sm text-slate-700 dark:text-slate-200" aria-live="polite">
+                <div className=" text-sm text-slate-700 " aria-live="polite">
                   <h1 className="text-l font-sans font-medium"> @hans_nafl</h1>
                 </div>     
               </div>
@@ -64,7 +64,7 @@ export default function Header() {
                 </div>
               </div>
               <div className="flex items-center justify-start">
-                <div className="pr-2 text-sm text-slate-700 dark:text-slate-200" aria-live="polite">
+                <div className="pr-2 text-sm text-slate-700 " aria-live="polite">
                   {now.toLocaleTimeString()}
                 </div>
               </div>

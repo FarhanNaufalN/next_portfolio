@@ -5,7 +5,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram, } from "react-icons/ai";
 
 export default function EducationClient() {
     return (
-        <div className="flex min-h-screen flex-col items-center py-10 px-4 bg-me text-slate-900 dark:text-white justify-center">
+        <div className="flex min-h-screen flex-col items-center py-10 px-4 bg-me text-slate-900 justify-center">
              {/* ------------------ EDUCATION ------------------ */}
         <section id="education" className="space-y-6 ">
             
@@ -223,7 +223,7 @@ export default function EducationClient() {
         </section>
 
                 {/* Footer */}
-                <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+                <footer className="pt-10 mt-16 text-center text-sm text-slate-600 ">
                   <div className="flex justify-center mb-8">
                   <Row gap="8" align="center">
                     © {new Date().getFullYear()} Farhan Naufal N 
