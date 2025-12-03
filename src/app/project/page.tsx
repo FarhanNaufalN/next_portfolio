@@ -82,6 +82,7 @@ export default function ProjectPage() {
               trigger={
                 <Card
                   maxWidth={22}
+                  minHeight={26}
                   padding="8"
                   direction="column"
                   radius="l-8"

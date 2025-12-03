@@ -25,7 +25,7 @@ export default function EducationClient() {
     
     <Column className="w-full flex flex-col items-center gap-6">
 
-      {/* Text */}
+      
       <Column fillWidth paddingX="20" paddingY="24" gap="8" className="text-center sm:text-left">
         <h3 className="font-semibold text-xl">
           Universitas Pendidikan Indonesia (2021–2025)
@@ -95,7 +95,7 @@ export default function EducationClient() {
 
     <Column className="w-full flex flex-col items-center gap-6">
 
-      {/* CompareImage — fixed aspect ratio */}
+      
       <div className="w-full max-w-md aspect-video rounded-xl overflow-hidden">
         <CompareImage
           radius="xl"
@@ -107,7 +107,7 @@ export default function EducationClient() {
         />
       </div>
 
-      {/* Text */}
+     
       <Column fillWidth paddingX="24" paddingY="24" gap="8" className="text-center sm:text-left">
         <h3 className="font-semibold text-xl">
           Bangkit Academy (Feb 2024 – Jul 2024)
@@ -143,12 +143,12 @@ export default function EducationClient() {
 
           <Mask fillWidth x={50} y={50} radius={20} borderBottom="neutral-medium" />
 
-          {/* ORG CARD 1 */}
+        
           <div className="w-full flex justify-center">
             <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 w-full max-w-5xl">
 
               <Row fillWidth gap="8" className="flex flex-col lg:flex-row">
-                {/* Text */}
+              
                 <Column fillWidth paddingX="24" paddingY="24" gap="8" className="lg:w-1/2">
                   <h3 className="font-semibold text-xl mr-xl">
                     Executive Chairman — Computer Engineering Student Association
@@ -161,7 +161,7 @@ export default function EducationClient() {
                   </ul>
                 </Column>
 
-                {/* Images */}
+                
                 <Column
                   fillWidth
                   paddingX="24"
@@ -184,7 +184,7 @@ export default function EducationClient() {
             </Card>
           </div>
 
-          {/* ORG CARD 2 */}
+         
           <div className="w-full flex justify-center">
             <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 w-full max-w-5xl">
 
@@ -214,7 +214,7 @@ export default function EducationClient() {
           </div>
         </section>
 
-        {/* FOOTER */}
+      
         <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
           <div className="flex justify-center mb-8">
             <Row gap="8" align="center" className="flex-wrap justify-center">
