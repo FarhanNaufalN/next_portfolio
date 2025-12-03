@@ -74,7 +74,7 @@ export default function ProjectPage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-10 px-4 bg-me text-slate-900 dark:text-white ">
       <main className="w-full max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
           {projects.map((p, index) => (
             <Hover
               key={p.title + index}

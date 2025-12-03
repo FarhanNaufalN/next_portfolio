@@ -132,8 +132,6 @@ export default function GalleryPage() {
 
 </section>
 
-
-
     <Mask
             fillWidth
             x={50}
