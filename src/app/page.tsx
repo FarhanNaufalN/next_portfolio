@@ -92,10 +92,10 @@ export default function Home() {
             <div className="space-y-6">
               <h3 className="text-xl font-semibold ">PT. INSTALASI KECERDASAN BUATAN</h3>
               <div className="text-cyan-600 dark:text-cyan-300 flex flex-col sm:flex-row sm:items-center">
-                <span className="font-semibold text-cyan-700 dark:text-cyan-400">Fullstack Developer - Internship</span>
-                <span className="ml-0 sm:ml-4 text-gray-600 dark:text-gray-400">(Sep 2024 – April 2025)</span>
+                <span className="font-semibold text-cyan-700 ">Fullstack Developer - Internship</span>
+                <span className="ml-0 sm:ml-4 text-gray-600 ">(Sep 2024 – April 2025)</span>
               </div>
-              <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-slate-700 ">
                 <li>Assisted the founder in explaining AI product concepts and implementations to stakeholders and potential partners.</li>
                 <li>Designed and built databases for data models to support efficient data management and storage.</li>
                 <li>Optimized data structures to meet the requirements of AI product development.</li>
@@ -117,10 +117,10 @@ export default function Home() {
             <div className="space-y-3 pt-10">
               <h3 className="text-xl font-semibold ">PT. AMATI INDONESIA</h3>
               <div className="text-cyan-600 dark:text-cyan-300 flex flex-col sm:flex-row sm:items-center">
-                <span className="font-semibold text-cyan-700 dark:text-cyan-400">Mobile Developer - Internship</span>
-                <span className="ml-0 sm:ml-4 text-gray-600 dark:text-gray-400">(Feb 2024 – Jul 2024)</span>
+                <span className="font-semibold text-cyan-700 ">Mobile Developer - Internship</span>
+                <span className="ml-0 sm:ml-4 text-gray-600">(Feb 2024 – Jul 2024)</span>
               </div>
-              <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-slate-700 ">
                 <li>Led Project Team : Directed a cross-functional team of 6 members in designing and implementing traceability technology, enhancing transparency and security across food supply chains.</li>
                 <li>Monitored Project Progress: Oversaw project milestones with weekly updates, resolving over 15 critical issues and ensuring the project stayed budget and on track.</li>
                 <li>Developed Mobile Application: Built the mobile application using Kotlin, integrating it with database using RESTful APIs to support real-time traceability and data synchronization.</li>
