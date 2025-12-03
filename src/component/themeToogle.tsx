@@ -1,40 +1,81 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import {ToggleButton, useTheme } from "@once-ui-system/core";
+import { ToggleButton, useTheme } from "@once-ui-system/core"; 
+
+
+type AppTheme = 'light' | 'dark';
 
 export const ThemeToggle: React.FC = () => {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState("light");
 
+  const { theme, setTheme } = useTheme(); 
+  
+  const [mounted, setMounted] = useState(false);
+
+  const [currentTheme, setCurrentTheme] = useState<AppTheme>('light'); 
+
+ 
   useEffect(() => {
     setMounted(true);
-    setCurrentTheme(document.documentElement.getAttribute("data-theme") || "light");
-  }, []);
+    
+    const storedTheme = localStorage.getItem('data-theme');
+    
+    let initialTheme: AppTheme = 'light'; 
 
+    if (storedTheme) {
+    
+      initialTheme = storedTheme as AppTheme; 
+
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+   
+      initialTheme = 'dark';
+    }
+
+    
+    setTheme(initialTheme); 
+    document.documentElement.setAttribute('data-theme', initialTheme);
+    
+    if (initialTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    setCurrentTheme(initialTheme);
+  }, [setTheme]); 
+
+
+ 
   useEffect(() => {
-    setCurrentTheme(document.documentElement.getAttribute("data-theme") || "light");
+   
+    const themeFromDOM = document.documentElement.getAttribute("data-theme") as AppTheme || "light";
+    setCurrentTheme(themeFromDOM);
   }, [theme]);
 
-  const icon = currentTheme === "dark" ? "light" : "dark";
-  const nextTheme = currentTheme === "light" ? "dark" : "light";
+
+ 
+  const icon = currentTheme === 'dark' ? 'light' : 'dark';
+  const nextTheme: AppTheme = currentTheme === 'light' ? 'dark' : 'light';
 
   return (
     <ToggleButton
       prefixIcon={icon}
       onClick={() => {
-        // update Once UI context
+      
         setTheme(nextTheme);
-        // persist and sync with document root so Tailwind `dark:` and global CSS react
+        
+       
         try {
+        
           localStorage.setItem('data-theme', nextTheme);
+          
           document.documentElement.setAttribute('data-theme', nextTheme);
           if (nextTheme === 'dark') document.documentElement.classList.add('dark');
           else document.documentElement.classList.remove('dark');
+          
           setCurrentTheme(nextTheme);
         } catch (e) {
-          // ignore in SSR or disabled storage environments
+        
         }
       }}
       aria-label={`Switch to ${nextTheme} mode`}
