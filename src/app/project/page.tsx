@@ -74,89 +74,68 @@ export default function ProjectPage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-10 px-4 bg-me text-slate-900 dark:text-white ">
       <main className="w-full max-w-6xl mx-auto">
-
-        <div className="flex flex-col items-center gap-12">
-
-          {/* AUTO ROW GENERATOR */}
-          {Array.from({ length: Math.ceil(projects.length / 3) }).map((_, row) => (
-            <Row gap="24"  key={row}>
-              {projects
-                .slice(row * 3, row * 3 + 3)
-                .map((p, index) => (
-                  <Hover
-                    key={p.title + index}
-                    tabIndex={-1}
-                    trigger={
-                      <Card
-                        maxWidth={18}
-                        padding="8"
-                        direction="column"
-                        radius="l-8"
-                        href={p.link}
-                      >
-                        <Media
-                          fillWidth
-                          aspectRatio="16 / 9"
-                          radius="l"
-                          alt={p.title}
-                          src={p.img}
-                          sizes="480px"
-                        />
-                        <Column fillWidth padding="20" gap="8">
-                          <Text variant="heading-strong-m">{p.title}</Text>
-                          <Text onBackground="neutral-weak" variant="body-default-s">
-                            {p.desc}
-                          </Text>
-                        </Column>
-                      </Card>
-                    }
-                    overlay={
-                      <Tag position="absolute" top="24" right="24">
-                        {p.tag}
-                      </Tag>
-                    }
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((p, index) => (
+            <Hover
+              key={p.title + index}
+              tabIndex={-1}
+              trigger={
+                <Card
+                  maxWidth={22}
+                  padding="8"
+                  direction="column"
+                  radius="l-8"
+                  href={p.link}
+                >
+                  <Media
+                    fillWidth
+                    aspectRatio="16 / 9"
+                    radius="l"
+                    alt={p.title}
+                    src={p.img}
+                    sizes="480px"
                   />
-                ))}
-            </Row>
+                  <Column fillWidth padding="20" gap="8">
+                    <Text variant="heading-strong-m">{p.title}</Text>
+                    <Text onBackground="neutral-weak" variant="body-default-s">
+                      {p.desc}
+                    </Text>
+                  </Column>
+                </Card>
+              }
+              overlay={
+                <Tag position="absolute" top="24" right="24">
+                  {p.tag}
+                </Tag>
+              }
+            />
           ))}
-
         </div>
-         {/* Footer */}
-                <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
-                  <div className="flex justify-center mb-8">
-                  <Row gap="8" align="center">
-                    © {new Date().getFullYear()} Farhan Naufal N 
-        
-                    <div className="ml-s grid-row-3 width-fit flex items-center gap-2">
-                      <AiFillInstagram size={24} />
-                      <a
-                        href="https://www.instagram.com/hans_nafl/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-600 hover:underline"
-                      >
-                      </a>
-                      <AiFillLinkedin size={24} />
-                      <a
-                        href="https://www.linkedin.com/in/farhannaufalnurdiansyah/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-600 hover:underline"
-                      >
-                      </a>
-                      <AiFillGithub size={24} />
-                      <a
-                        href="https://github.com/FarhanNaufalN/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-600 hover:underline"
-                      >
-                      </a>
-                    </div>
-                    </Row>
-                    </div>
-                </footer>
+
+        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+          <div className="flex justify-center mb-8">
+          
+            <Row gap="8" align="center" className="flex-wrap justify-center"> 
+              
+              <span>© {new Date().getFullYear()} Farhan Naufal N</span> 
+
+             
+              <div className="flex items-center gap-2 mt-2 sm:mt-0">
+                <AiFillInstagram size={20} /> 
+                <a href="https://www.instagram.com/hans_nafl/" target="_blank" rel="noopener noreferrer" className="sr-only">Instagram</a>
+                
+                <AiFillLinkedin size={20} />
+                <a href="https://www.linkedin.com/in/farhannaufalnurdiansyah/" target="_blank" rel="noopener noreferrer" className="sr-only">LinkedIn</a>
+                
+                <AiFillGithub size={20} />
+                <a href="https://github.com/FarhanNaufalN/" target="_blank" rel="noopener noreferrer" className="sr-only">GitHub</a>
+              </div>
+            </Row>
+          </div>
+        </footer>
       </main>
     </div>
   );
 }
+
+

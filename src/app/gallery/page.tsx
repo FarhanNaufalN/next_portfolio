@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import { Row, Card, Media, AutoScroll,ShineFx, Avatar, Icon, Text,Line,Mask, MasonryGrid,Flex,Column } from "@once-ui-system/core";
-
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
 export default function GalleryPage() {
   const images = [
@@ -69,7 +69,7 @@ export default function GalleryPage() {
   const heights = [16, 6, 4, 6, 16, 12, 7, 24, 4, 12, 6, 2, 24, 17, 12, 5, 9, 6, 20, 11];
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 ">
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 dark:text-white">
       <main className="w-screen relative py-5">
 
              {/* ------------------ Certification ------------------ */}
@@ -187,6 +187,28 @@ export default function GalleryPage() {
         </MasonryGrid>
         </Column>
         </div>
+
+        <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+                  <div className="flex justify-center mb-8">
+                  
+                    <Row gap="8" align="center" className="flex-wrap justify-center"> 
+                      
+                      <span>© {new Date().getFullYear()} Farhan Naufal N</span> 
+        
+                     
+                      <div className="flex items-center gap-2 mt-2 sm:mt-0">
+                        <AiFillInstagram size={20} /> 
+                        <a href="https://www.instagram.com/hans_nafl/" target="_blank" rel="noopener noreferrer" className="sr-only">Instagram</a>
+                        
+                        <AiFillLinkedin size={20} />
+                        <a href="https://www.linkedin.com/in/farhannaufalnurdiansyah/" target="_blank" rel="noopener noreferrer" className="sr-only">LinkedIn</a>
+                        
+                        <AiFillGithub size={20} />
+                        <a href="https://github.com/FarhanNaufalN/" target="_blank" rel="noopener noreferrer" className="sr-only">GitHub</a>
+                      </div>
+                    </Row>
+                  </div>
+                </footer>
 
       </main>
     </div>

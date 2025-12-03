@@ -222,41 +222,27 @@ export default function EducationClient() {
           
         </section>
 
-                {/* Footer */}
-                <footer className="pt-10 mt-16 text-center text-sm text-slate-600 ">
-                  <div className="flex justify-center mb-8">
-                  <Row gap="8" align="center">
-                    © {new Date().getFullYear()} Farhan Naufal N 
-        
-                    <div className="ml-s grid-row-3 width-fit flex items-center gap-2">
-                      <AiFillInstagram size={24} />
-                      <a
-                        href="https://www.instagram.com/hans_nafl/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-600 hover:underline"
-                      >
-                      </a>
-                      <AiFillLinkedin size={24} />
-                      <a
-                        href="https://www.linkedin.com/in/farhannaufalnurdiansyah/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-600 hover:underline"
-                      >
-                      </a>
-                      <AiFillGithub size={24} />
-                      <a
-                        href="https://github.com/FarhanNaufalN/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-600 hover:underline"
-                      >
-                      </a>
-                    </div>
-                    </Row>
-                    </div>
-                </footer>
+               <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
+          <div className="flex justify-center mb-8">
+          
+            <Row gap="8" align="center" className="flex-wrap justify-center"> 
+              
+              <span>© {new Date().getFullYear()} Farhan Naufal N</span> 
+
+             
+              <div className="flex items-center gap-2 mt-2 sm:mt-0">
+                <AiFillInstagram size={20} /> 
+                <a href="https://www.instagram.com/hans_nafl/" target="_blank" rel="noopener noreferrer" className="sr-only">Instagram</a>
+                
+                <AiFillLinkedin size={20} />
+                <a href="https://www.linkedin.com/in/farhannaufalnurdiansyah/" target="_blank" rel="noopener noreferrer" className="sr-only">LinkedIn</a>
+                
+                <AiFillGithub size={20} />
+                <a href="https://github.com/FarhanNaufalN/" target="_blank" rel="noopener noreferrer" className="sr-only">GitHub</a>
+              </div>
+            </Row>
+          </div>
+        </footer>
         </div>
     );
 }
