@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { Row,} from "@once-ui-system/core";
+import { Row } from "@once-ui-system/core";
 import { SegmentedControl, ButtonOption } from "./segmentControl";
 import { ThemeToggle } from "./themeToogle"; 
 
@@ -19,58 +19,57 @@ export default function Header() {
   const navMenu: ButtonOption[] = [
     { value: "/", prefixIcon: "person" },
     { value: "/project", label: "Projects" },
-     { value: "/education", label: "Education" },
+    { value: "/education", label: "Education" },
     { value: "/gallery", label: "Gallery" },
   ];
 
   return (
-    <header style={{ position: "sticky", top: 0, zIndex: 10 }}
-    className="w-full">
-
+    <header 
+      style={{ position: "sticky", top: 0, zIndex: 10 }}
+      className="w-full"
+    >
       <Row
         align="center"
-        center
         minHeight={10}
         minWidth={12}
-        s={{direction: "column"}}
+        
         style={{
           backdropFilter: "blur(16px)",
           borderBottom: "1px solid var(--neutral-alpha-200)",
           paddingInline: 10
         }}
-        >
-         
-
-            <div className="w-full grid grid-cols-4 items-center">
-              <div />
-               <div className="col-start-1 col-end-2 ml-xl">
-                <div className=" text-sm text-slate-700 " aria-live="polite">
-                  <h1 className="text-l font-sans font-medium"> @hans_nafl</h1>
-                </div>     
-              </div>
+      >
+       
+        <div className="w-full flex items-center justify-between px-2 
+                        sm:grid sm:grid-cols-3 sm:items-center">
+          
+          
+          <div className="sm:col-start-1 sm:col-end-2 ml-2">
+            <h1 className="text-sm sm:text-l font-sans font-medium text-slate-700 dark:text-white">
+              @hans_nafl
+            </h1>
+          </div>
+          
+          <div className="sm:col-start-2 sm:col-end-3 flex justify-center w-full order-3 sm:order-none mt-2 sm:mt-0 gap-2">
+            <SegmentedControl
+              buttons={navMenu}
+              selected={pathname}
+              onToggle={(val) => router.push(val)}
+              fillWidth={false}
               
-                 
-              <div className="col-start-2 col-end-4 flex justify-center">
-                <SegmentedControl
-                  buttons={navMenu}
-                  selected={pathname}
-                  onToggle={(val) => router.push(val)}
-                  fillWidth={false}
-                  compact={false}
-                />
-
-                <div className="ml-2">
-                  <ThemeToggle />
-                </div>
-              </div>
-              <div className="flex items-center justify-start">
-                <div className="pr-2 text-sm text-slate-700 " aria-live="polite">
-                  {now.toLocaleTimeString()}
-                </div>
-              </div>
+            />
+            <ThemeToggle /> 
+          </div>
+          
+          <div className="sm:col-start-3 sm:col-end-4 flex items-center justify-end gap-4 pr-14">
+             
+            <div className="text-sm text-slate-700 dark:text-white" aria-live="polite">
+              {now.toLocaleTimeString()}
             </div>
-      </Row>
+          </div>
 
+        </div>
+      </Row>
     </header>
   );
 }

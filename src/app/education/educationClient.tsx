@@ -30,7 +30,7 @@ export default function EducationClient() {
             />
             
 
-         <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w mx-auto w-300">
+         <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w mx-auto w-250">
    
              <Column fillWidth paddingX="20" paddingY="24" gap="8">
             <h3 className="font-semibold text-xl">
@@ -68,7 +68,7 @@ export default function EducationClient() {
                 
             </Card>
 
-          <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w mx-auto w-300">
+          <Card className="p-6 space-y-4 rounded-4xl bg-white/10 border border-white/20 w mx-auto w-250">
             <div className="justify-center mt-s" >
             <CompareImage
                 radius="xl"
@@ -125,7 +125,7 @@ export default function EducationClient() {
             />
             
 
-          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 w-300">
+          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 w-250">
         
           <Row fillWidth gap="8" >
           <Column fillWidth paddingX="24" paddingY="24" gap="8">
@@ -176,7 +176,7 @@ export default function EducationClient() {
         
           </Card>
             
-          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 mx-auto w-300">
+          <Card className="p-6 space-y-4 rounded-3xl bg-white/10 border border-white/20 mx-auto w-250">
           <Column fillWidth paddingX="24" paddingY="24" gap="8">
             
               <Row maxWidth={32} height={8} gap="8">

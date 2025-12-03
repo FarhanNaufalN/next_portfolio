@@ -1,72 +1,72 @@
 'use client';
 
 import Image from "next/image";
-import { Badge, Row, TypeFx, Carousel,ShineFx, Avatar, Mask  } from "@once-ui-system/core";
+import { Badge, Row, TypeFx, Carousel, ShineFx, Avatar, Mask } from "@once-ui-system/core";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 dark:text-white "
-    >
+   
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 px-4 bg-me text-slate-900 dark:text-white ">
 
-      <main className="w-screen relative py-5">
-
-       
+      {/* Main Content Area */}
+      <main className="w-full max-w-4xl relative py-5 px-4 sm:px-6 lg:px-8"> 
         
-        {/* Hero Section */}
+        {/* --- Hero Section --- */}
         <section className="text-start ">
-          <div className="flex justify-center  ml-20 gap-6">
-            <div className="sticky top-20 h-fit">
+          {/* PERBAIKAN: Layout Vertikal di Mobile, Horizontal di Small/Medium */}
+          <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-6">
+            
+        
+            <div className="relative w-fit flex flex-col items-center sm:items-start sm:sticky sm:top-20 sm:h-fit mb-6 sm:mb-0">
               <Image
                 src="/Me.png"
                 alt="Farhan Naufal N"
-                width={180}
-                height={180}
+                width={150} 
+                height={150}
                 className="rounded-full shadow-xl object-cover"
               />
-              <div className="pl-5 pt-5">
-              <Badge id="badge-2" title="Indonesia / Bandung"  arrow={false} paddingLeft="12" paddingRight="16" paddingY="8" onBackground="brand-medium" background="brand-medium" />
+             
+              <div className="pt-5 flex justify-center w-full sm:pl-5"> 
+                <Badge id="badge-2" title="Indonesia / Bandung" arrow={false} paddingLeft="12" paddingRight="16" paddingY="8" onBackground="brand-medium" background="brand-medium" />
               </div>
             </div>
 
-
-
-            <div className="sm:pl-10 mt-12 pb-5">
+         
+            <div className="sm:pl-10 mt-6 sm:mt-12 pb-5 text-center sm:text-left">
               <ShineFx speed={3}>
-              <h1 className="text-4xl font-bold mb-2 text-slate-800 dark:text-white">
-                Farhan Naufal N
-              </h1>
+                <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-slate-800 dark:text-white">
+                  Farhan Naufal N
+                </h1>
               </ShineFx>
-            <div className="pt-3">
-              <TypeFx
-                words={["Software Engineer", "Internet of Things", "AI Enthusiast", "Mobile Developer"]}
-                speed={80}
-                hold={2000}
-                trigger="instant"
-              />
+              <div className="pt-3">
+                <TypeFx
+                  words={["Software Engineer", "Internet of Things", "AI Enthusiast", "Mobile Developer"]}
+                  speed={80}
+                  hold={2000}
+                  trigger="instant"
+                />
               </div>
 
-
-              <p className="text-slate-600 dark:text-white max-w-lg pt-12 ">
+              <p className="text-slate-600 dark:text-white max-w-lg pt-8 sm:pt-12 mx-auto sm:mx-0">
                 Software Engineer, IoT, AI, and Mobile Development Enthusiast.
                 Passionate about building scalable systems, drone-based CV models,
                 and real-world IoT solutions.
               </p>
 
-              <div className="flex items-center gap-4 mt-12">
+             
+              <div className="flex flex-wrap justify-center sm:justify-start items-center gap-3 mt-8 sm:mt-12">
                 <div className="flex items-center gap-2">
-                    <AiFillLinkedin className="w-5 h-5 text-blue-600 dark:text-white" aria-hidden />
+                  <AiFillLinkedin className="w-5 h-5 text-blue-600 dark:text-white" aria-hidden />
                   <Badge href="https://www.linkedin.com/in/farhannaufalnurdiansyah/" id="badge-1" title="LinkedIn" textVariant="label-default-s" color="blue" />
                 </div>
-
                 <div className="flex items-center gap-2">
-                    <AiFillGithub className="w-5 h-5 text-slate-800 dark:text-white" aria-hidden />
-                  <Badge href="https://github.com/FarhanNaufalN/" id="badge-2" title="GitHub"  textVariant="label-default-s" />
+                  <AiFillGithub className="w-5 h-5 text-slate-800 dark:text-white" aria-hidden />
+                  <Badge href="https://github.com/FarhanNaufalN/" id="badge-2" title="GitHub" textVariant="label-default-s" />
                 </div>
-
                 <div className="flex items-center gap-2">
-                    <AiFillInstagram className="w-5 h-5 text-pink-500 dark:text-white" aria-hidden />
+                  <AiFillInstagram className="w-5 h-5 text-pink-500 dark:text-white" aria-hidden />
                   <Badge href="https://www.instagram.com/hans_nafl/" id="badge-3" title="Instagram" textVariant="label-default-s" />
                 </div>
               </div>
@@ -74,34 +74,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Work Experience */}
-        <section className=" mt-10 space-y-8 flex flex-col items-center">
-           <Mask
-            fillWidth
-            x={50}
-            y={50}
-            radius={20}
-            borderBottom="neutral-medium"
-            />
-           <ShineFx speed={3}>
-          <h2 className="text-3xl font-semibold pb-5 dark:text-white pb-5">
-            Work Experience
-          </h2>
-            </ShineFx>
-          <Mask
-            fillWidth
-            x={50}
-            y={50}
-            radius={20}
-            borderBottom="neutral-medium"
-            />
-          <div className="space-y-6 w-full max-w-2xl">
-            {/* PT. INSTALASI KECERDASAN BUATAN */}
+        {/* --- Work Experience --- */}
+        <section className="mt-10 space-y-8 flex flex-col items-center">
+
+          <ShineFx speed={3}>
+            <h2 className="text-3xl font-semibold pb-5 dark:text-white">
+              Work Experience
+            </h2>
+          </ShineFx>
+
+          <Mask fillWidth x={50} y={50} radius={20} borderBottom="neutral-medium" />
+
+         
+          <div className="space-y-6 w-full max-w-2xl px-2 sm:px-0"> 
+            
+           
             <div className="space-y-6">
               <h3 className="text-xl font-semibold dark:text-white">PT. INSTALASI KECERDASAN BUATAN</h3>
-              <div className="text-cyan-600 dark:text-cyan-300">
+              <div className="text-cyan-600 dark:text-cyan-300 flex flex-col sm:flex-row sm:items-center">
                 <span className="font-semibold text-cyan-700 dark:text-cyan-400">Fullstack Developer - Internship</span>
-                <span className="ml-4 text-gray-600 dark:text-gray-400">(Sep 2024 – April 2025)</span>
+                <span className="ml-0 sm:ml-4 text-gray-600 dark:text-gray-400">(Sep 2024 – April 2025)</span>
               </div>
               <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
                 <li>Assisted the founder in explaining AI product concepts and implementations to stakeholders and potential partners.</li>
@@ -110,26 +102,23 @@ export default function Home() {
               </ul>
             </div>
 
+           
             <div className="flex justify-center pt-4">
-              <div className="w-80 sm:w-96">
+              <div className="w-full max-w-sm sm:w-96"> 
                 <Carousel
                   sizes="100%"
                   className="rounded-lg overflow-hidden"
-                  items={[
-                    { slide: "/ikb1.jpg", alt: "Image 1" },
-                    { slide: "/ikb2.jpg", alt: "Image 2" },
-                    { slide: "/ikb3.jpg", alt: "Image 3" },
-                  ]}
+                  items={[{ slide: "/ikb1.jpg", alt: "Image 1" }, { slide: "/ikb2.jpg", alt: "Image 2" }, { slide: "/ikb3.jpg", alt: "Image 3" }]}
                 />
               </div>
             </div>
 
-            {/* PT. AMATI INDONESIA */}
+           
             <div className="space-y-3 pt-10">
               <h3 className="text-xl font-semibold dark:text-white">PT. AMATI INDONESIA</h3>
-              <div className="text-cyan-600 dark:text-cyan-300">
+              <div className="text-cyan-600 dark:text-cyan-300 flex flex-col sm:flex-row sm:items-center">
                 <span className="font-semibold text-cyan-700 dark:text-cyan-400">Mobile Developer - Internship</span>
-                <span className="ml-4 text-gray-600 dark:text-gray-400">(Feb 2024 – Jul 2024)</span>
+                <span className="ml-0 sm:ml-4 text-gray-600 dark:text-gray-400">(Feb 2024 – Jul 2024)</span>
               </div>
               <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
                 <li>Led Project Team : Directed a cross-functional team of 6 members in designing and implementing traceability technology, enhancing transparency and security across food supply chains.</li>
@@ -137,120 +126,80 @@ export default function Home() {
                 <li>Developed Mobile Application: Built the mobile application using Kotlin, integrating it with database using RESTful APIs to support real-time traceability and data synchronization.</li>
               </ul>
             </div>
-
+            
             <div className="flex justify-center pt-4">
-              <div className="w-80 sm:w-96">
+              <div className="w-full max-w-sm sm:w-96">
                 <Carousel
                   sizes="100%"
                   className="rounded-lg overflow-hidden"
-                  items={[
-                    { slide: "/amati1.png", alt: "Image 1" },
-                    { slide: "/amati2.png", alt: "Image 2" },
-                    { slide: "/amati3.png", alt: "Image 3" },
-                  ]}
+                  items={[{ slide: "/amati1.png", alt: "Image 1" }, { slide: "/amati2.png", alt: "Image 2" }, { slide: "/amati3.png", alt: "Image 3" }]}
                 />
               </div>
             </div>
+
           </div>
         </section>
-
-       {/* Skills Section */}
-        <section className="mt-12 pt-14 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
-          <div className="flex justify-center mb-8">
-            <Mask
-            fillWidth
-            x={50}
-            y={50}
-            radius={20}
-            borderBottom="neutral-medium"
-            />
-          <ShineFx speed={3}>
-          <h2 className="text-3xl font-semibold pb-5 dark:text-white text-center justify-center">
-            Tech Stack
-          </h2>
-          </ShineFx>
-          <Mask
-            fillWidth
-            x={50}
-            y={50}
-            radius={20}
-            borderBottom="neutral-medium"
-            />
-          </div>
-
-          {/* Row 1 */}
-          <div className="flex justify-center">
-            <Row gap="16">
-              <Avatar src="/logos/client-1.png" size="l" />
-              <Avatar src="/logos/client-2.png" size="l" />
-              <Avatar src="/logos/client-3.png" size="l" />
-              <Avatar src="/logos/client-4.png" size="l" />
-              <Avatar src="/logos/client-5.png" size="l" />
-              <Avatar src="/logos/client-6.png" size="l" />
-            </Row>
-          </div>
-
-          {/* Row 2 */}
-          <div className="flex justify-center mt-6">
-            <Row gap="16">
-              <Avatar src="/logos/client-7.png" size="l" />
-              <Avatar src="/logos/client-8.png" size="l" />
-              <Avatar src="/logos/client-9.png" size="l" />
-              <Avatar src="/logos/client-10.png" size="l" />
-              <Avatar src="/logos/client-11.png" size="l" />
-              <Avatar src="/logos/client-12.png" size="l" />
-            </Row>
-          </div>
-
-          {/* Row 3 */}
-          <div className="flex justify-center mt-6">
-            <Row gap="16">
-              <Avatar src="/logos/client-13.png" size="l" />
-              <Avatar src="/logos/client-14.jpg" size="l" />
-              <Avatar src="/logos/client-15.png" size="l" />
-              <Avatar src="/logos/client-16.png" size="l" />
-              <Avatar src="/logos/client-17.jpg" size="l" />
-            </Row>
-          </div>
-        </section>
-
 
        
+        <section className="mt-12 pt-14 px-4 sm:px-0"> 
+          
+          {/* Judul */}
+          <div className="flex justify-center mb-8">
+            <Mask fillWidth x={50} y={50} radius={20} borderBottom="neutral-medium" />
+            <ShineFx speed={3}>
+              <h2 className="text-3xl font-semibold pb-5 dark:text-white text-center justify-center">
+                Tech Stack
+              </h2>
+            </ShineFx>
+            <Mask fillWidth x={50} y={50} radius={20} borderBottom="neutral-medium" />
+          </div>
 
-        {/* Footer */}
+          
+          <div className="space-y-6 flex flex-col items-center">
+            
+            
+            {[
+              ["/logos/client-1.png", "/logos/client-2.png", "/logos/client-3.png", "/logos/client-4.png", "/logos/client-5.png", "/logos/client-6.png"],
+              ["/logos/client-7.png", "/logos/client-8.png", "/logos/client-9.png", "/logos/client-10.png", "/logos/client-11.png", "/logos/client-12.png"],
+              ["/logos/client-13.png", "/logos/client-14.jpg", "/logos/client-15.png", "/logos/client-16.png", "/logos/client-17.jpg"],
+            ].map((logos, index) => (
+              <div key={index} className="flex justify-center w-full">
+                <Row gap="8" className="flex-wrap justify-center w-full max-w-full"> {/* Tambahkan flex-wrap */}
+                  {logos.map((src, logoIndex) => (
+                    <Avatar 
+                      key={logoIndex} 
+                      src={src} 
+                      size="m" 
+                      className="sm:size-l" 
+                    />
+                  ))}
+                </Row>
+              </div>
+            ))}
+          </div>
+        </section>
+        
+       
         <footer className="pt-10 mt-16 text-center text-sm text-slate-600 dark:text-white">
           <div className="flex justify-center mb-8">
-          <Row gap="8" align="center">
-            © {new Date().getFullYear()} Farhan Naufal N 
+          
+            <Row gap="8" align="center" className="flex-wrap justify-center"> 
+              
+              <span>© {new Date().getFullYear()} Farhan Naufal N</span> 
 
-            <div className="ml-s grid-row-3 width-fit flex items-center gap-2">
-              <AiFillInstagram size={24} />
-              <a
-                href="https://www.instagram.com/hans_nafl/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-cyan-600 hover:underline"
-              >
-              </a>
-              <AiFillLinkedin size={24} />
-              <a
-                href="https://www.linkedin.com/in/farhannaufalnurdiansyah/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-cyan-600 hover:underline"
-              >
-              </a>
-              <AiFillGithub size={24} />
-              <a
-                href="https://github.com/FarhanNaufalN/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-cyan-600 hover:underline"
-              >
-              </a>
-            </div>
+             
+              <div className="flex items-center gap-2 mt-2 sm:mt-0">
+                <AiFillInstagram size={20} /> 
+                <a href="https://www.instagram.com/hans_nafl/" target="_blank" rel="noopener noreferrer" className="sr-only">Instagram</a>
+                
+                <AiFillLinkedin size={20} />
+                <a href="https://www.linkedin.com/in/farhannaufalnurdiansyah/" target="_blank" rel="noopener noreferrer" className="sr-only">LinkedIn</a>
+                
+                <AiFillGithub size={20} />
+                <a href="https://github.com/FarhanNaufalN/" target="_blank" rel="noopener noreferrer" className="sr-only">GitHub</a>
+              </div>
             </Row>
-            </div>
+          </div>
         </footer>
 
       </main>
