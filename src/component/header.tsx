@@ -40,7 +40,7 @@ export default function Header() {
       >
         <div
           className="
-            w-full flex items-center justify-between px-2 py-2
+            w-full flex items-center justify-between px-m py-2
             sm:grid sm:grid-cols-3 sm:items-center
 
           "

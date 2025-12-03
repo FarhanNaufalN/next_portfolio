@@ -144,18 +144,18 @@ export default function Home() {
         <section className="mt-12 pt-14 px-4 sm:px-0"> 
           
           {/* Judul */}
+          
           <div className="flex justify-center mb-8">
-            <Mask fillWidth x={50} y={50} radius={20} borderBottom="neutral-medium" />
             <ShineFx speed={3}>
               <h2 className="text-3xl font-semibold pb-5 dark:text-white text-center justify-center">
                 Tech Stack
               </h2>
             </ShineFx>
-            <Mask fillWidth x={50} y={50} radius={20} borderBottom="neutral-medium" />
           </div>
+           <Mask fillWidth x={50} y={50} radius={30} borderBottom="neutral-medium" />
 
           
-          <div className="space-y-6 flex flex-col items-center">
+          <div className="space-y-6 flex flex-col items-center mt-24">
             
             
             {[
