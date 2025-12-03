@@ -40,14 +40,14 @@ export default function Header() {
       >
         <div
           className="
-            w-full flex items-center justify-between px-xl py-2
+            w-full flex items-center justify-between px-2 py-2
             sm:grid sm:grid-cols-3 sm:items-center
 
           "
         >
          
           <div className="sm:col-start-1 sm:col-end-2 ml-2 flex justify-start">
-            <h1 className="text-sm sm:text-lg font-sans font-medium text-slate-700 dark:text-white">
+            <h1 className="text-sm sm:text-l font-sans font-medium text-slate-700 dark:text-white">
               @hans_nafl
             </h1>
           </div>
@@ -77,7 +77,7 @@ export default function Header() {
             "
           >
             <div
-              className="text-sm sm:text-base text-slate-700 dark:text-white"
+              className="text-l sm:text-base text-slate-700 dark:text-white"
               aria-live="polite"
             >
               {now.toLocaleTimeString()}
