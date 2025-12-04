@@ -10,7 +10,10 @@ import OnceUIClientLayout from '@/component/onceUiClientLayout';
 
 
 export const metadata = {
-  title: 'App',
+  title: 'Farhan Naufal N',
+  icons: {
+    icon: "/Me.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
